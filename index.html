@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Special Invitation ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff8f8;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+#hero{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url('pyramids.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    padding:30px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff4d8d;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* GENERAL */
+
+.section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+/* MESSAGE */
+
+.photo{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:30px;
+    border:6px solid #ffb6c1;
+}
+
+.message p{
+    margin-bottom:20px;
+    line-height:1.8;
+    font-size:1.15rem;
+}
+
+/* TIMELINE */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    max-width:800px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.reveal-btn{
+    background:#ff4d8d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.revealed{
+    font-size:1.2rem;
+    color:#ff4d8d;
+    font-weight:600;
+    margin-top:15px;
+}
+
+/* FINAL QUESTION */
+
+#question{
+    background:linear-gradient(135deg,#ffe4ec,#fff7f9);
+    position:relative;
+    min-height:100vh;
+}
+
+#question h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+#question p{
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.8;
+    font-size:1.2rem;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.yes-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:40px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+.no-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:40px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+#successMessage{
+    margin-top:50px;
+}
+
+#successMessage h1{
+    color:#ff4d8d;
+}
+
+.heart{
+    position:fixed;
+    font-size:24px;
+    animation:floatUp 4s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes floatUp{
+    from{
+        opacity:1;
+        transform:translateY(0);
+    }
+    to{
+        opacity:0;
+        transform:translateY(-500px);
+    }
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+.section h2{
+    font-size:2rem;
+}
+
+#question h1{
+    font-size:2.2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section id="hero">
+
+    <div class="hero-content">
+        <h1>❤️ A Special Invitation ❤️</h1>
+
+        <p>For the most beautiful woman in my life</p>
+
+        <button class="btn"
+            onclick="document.getElementById('message').scrollIntoView()">
+            Open Your Invitation
+        </button>
+    </div>
+
+</section>
+
+<!-- MESSAGE -->
+
+<section id="message" class="section">
+
+    <div class="container message">
+
+        <img src="us.jpg" alt="Us" class="photo">
+
+        <h2>Dear Loulu ❤️</h2>
+
+        <p>
+            Every day with you becomes one of my favorite memories.
+        </p>
+
+        <p>
+            You make ordinary moments feel extraordinary, and every adventure feels better when you're beside me.
+        </p>
+
+        <p>
+            So I'd like to invite you on a little adventure this Friday.
+        </p>
+
+        <p>
+            A day filled with beautiful views, amazing history, delicious food, and most importantly my favorite person.
+        </p>
+
+        <p>
+            But before I tell you everything...
+            you'll have to uncover the plan.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="section">
+
+    <h2>The Adventure Timeline ✨</h2>
+
+    <div class="timeline">
+
+        <div class="card">
+            <h3>Part #1 🍳</h3>
+            <p>We'll start somewhere magical...</p>
+
+            <button class="reveal-btn"
+                onclick="reveal(this,'Breakfast with a breathtaking view of the Pyramids.')">
+                Reveal
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Part #2 🏺</h3>
+            <p>We'll walk through thousands of years of history...</p>
+
+            <button class="reveal-btn"
+                onclick="reveal(this,'Exploring the Great Pyramids together.')">
+                Reveal
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Part #3 🦁</h3>
+            <p>The guardian of Cairo awaits us...</p>
+
+            <button class="reveal-btn"
+                onclick="reveal(this,'A visit to the magnificent Sphinx.')">
+                Reveal
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Part #4 🍽️</h3>
+            <p>The perfect ending to a perfect day...</p>
+
+            <button class="reveal-btn"
+                onclick="reveal(this,'Dinner together ❤️')">
+                Reveal
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUESTION -->
+
+<section id="question" class="section">
+
+    <h1>One Last Question...</h1>
+
+    <p>
+        From breakfast overlooking one of the 7 wonders of the world,
+        to exploring ancient history together,
+        to ending the day over dinner...
+        there's only one thing missing from this adventure.
+    </p>
+
+    <h2>Will You Be My Date This Friday? ❤️</h2>
+
+    <div class="buttons">
+
+        <button id="yesBtn" class="yes-btn">
+            YES! ❤️
+        </button>
+
+        <button id="noBtn" class="no-btn">
+            No
+        </button>
+
+    </div>
+
+    <div id="successMessage"></div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+
+function reveal(button,text){
+
+    button.outerHTML =
+        `<div class="revealed">${text}</div>`;
+}
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover",()=>{
+
+    const x = Math.random() * (window.innerWidth - 150);
+    const y = Math.random() * (window.innerHeight - 150);
+
+    noBtn.style.position = "fixed";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+
+document.getElementById("yesBtn").addEventListener("click",()=>{
+
+    confetti({
+        particleCount:200,
+        spread:120,
+        origin:{y:0.6}
+    });
+
+    document.getElementById("successMessage").innerHTML = `
+        <h1>🎉 You make me the happiest man alive! 🎉</h1>
+        <p style="margin-top:20px;font-size:1.3rem;">
+            I can't wait to spend Friday with you ❤️
+            I'll pick you up at 9am on Friday, so get some good rest ❤️
+        </p>
+    `;
+
+    for(let i=0;i<40;i++){
+
+        setTimeout(()=>{
+
+            const heart=document.createElement("div");
+
+            heart.classList.add("heart");
+            heart.innerHTML="❤️";
+
+            heart.style.left=Math.random()*100+"vw";
+            heart.style.bottom="0";
+
+            document.body.appendChild(heart);
+
+            setTimeout(()=>heart.remove(),4000);
+
+        },i*100);
+    }
+});
+
+</script>
+
+</body>
+</html>
